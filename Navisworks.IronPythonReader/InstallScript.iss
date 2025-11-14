@@ -5,7 +5,7 @@
 #define AssemblyName "Navisworks.IronPythonReader"
 #define AppName "RNM IronPythonReader"
 #define AppAlias "IronPython Reader"
-#define AppVersion "0.0.0"
+#define AppVersion "1.0.0"
 #define AppPublisher "RNMTools"
 
 #define ScriptRoot SourcePath
@@ -17,12 +17,12 @@
 
 #define Navisworks2024 "\\Autodesk\\ApplicationPlugins\\" + AssemblyName + ".bundle\\Contents\\2024\\"
 
-#pragma message "📁 ScriptRoot: {#ScriptRoot}"
-#pragma message "📁 ProjectRoot: {#ProjectRoot}"
-#pragma message "📁 BinRelease: {#BinRelease}"
-#pragma message "📁 RibbonPath: {#RibbonPath}"
-#pragma message "📁 PackageContents: {#PackageContents}"
-#pragma message "📁 ResourcesPath: {#ResourcesPath}"
+#pragma message "ScriptRoot: {#ScriptRoot}"
+#pragma message "ProjectRoot: {#ProjectRoot}"
+#pragma message "BinRelease: {#BinRelease}"
+#pragma message "RibbonPath: {#RibbonPath}"
+#pragma message "PackageContents: {#PackageContents}"
+#pragma message "ResourcesPath: {#ResourcesPath}"
 
 [Setup]
 AppId={{93CD3F1E-2854-4FD4-9CDD-A29968587182}}
