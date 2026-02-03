@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage
+  SchemaVersion="1.0"
+  AutodeskProduct="Navisworks"
+  Name="Reader"
+  Description="Iron Python Reader Template"
+  AppVersion="1.0.0"
+  FriendlyVersion="1.0.0"
+  ProductType="Application"
+  SupportedLocales="Enu"
+  AppNameSpace=""
+  OnlineDocumentation=""
+  Author="RNM"
+  ProductCode="{3510D223-41EC-4079-B3A1-E1D34ED2CB63}">
+
+  <CompanyDetails Name="RNMTools" Url="" Email=""/>
+  <Components Description="Navisworks 2024 Iron Python Reader">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw21" SeriesMax="Nw21" />
+    <ComponentEntry AppName="Reader" AppType="ManagedPlugin" AppDescription="" Version="1.0.0" ModuleName="./Contents/2024/Navisworks.IronPythonReader.dll"/>
+  </Components>
+</ApplicationPackage>
