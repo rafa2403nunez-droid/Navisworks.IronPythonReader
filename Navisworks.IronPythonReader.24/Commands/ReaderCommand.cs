@@ -2,7 +2,6 @@
 using Navisworks.IronPythonReader.Services;
 using RNM.Navisworks.Reader.Services;
 using System;
-using System.Windows;
 
 namespace RNM.Navisworks.Reader.Commands
 {
@@ -19,7 +18,8 @@ namespace RNM.Navisworks.Reader.Commands
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                IDialogService dialogService = new DialogService();
+                dialogService.ShowErrorDialog("ReaderCommand", ex);
                 return 0;
             }
         }

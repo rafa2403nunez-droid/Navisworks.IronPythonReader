@@ -21,7 +21,7 @@ namespace RNM.Navisworks.Reader.Services
 
             if (path == null)
             {
-                throw new ArgumentNullException("path");
+                throw new Exception("File not Selected");
             }
 
             ScriptEngine engine = Python.CreateEngine();
