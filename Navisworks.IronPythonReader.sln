@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36616.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navisworks.IronPythonReader.24", "Navisworks.IronPythonReader.24\Navisworks.IronPythonReader.24.csproj", "{3DE19409-C9B7-4B41-B92C-1DAD6348043A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navisworks.IronPythonReader.26", "Navisworks.IronPythonReader.26\Navisworks.IronPythonReader.26.csproj", "{23999C97-B934-443D-A86C-7792FBF9E831}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navisworks.IronPythonReader.26", "Navisworks.IronPythonReader.26\Navisworks.IronPythonReader.26.csproj", "{28DB9E97-2163-4681-83EF-48545160B332}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{3DE19409-C9B7-4B41-B92C-1DAD6348043A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DE19409-C9B7-4B41-B92C-1DAD6348043A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DE19409-C9B7-4B41-B92C-1DAD6348043A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23999C97-B934-443D-A86C-7792FBF9E831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23999C97-B934-443D-A86C-7792FBF9E831}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23999C97-B934-443D-A86C-7792FBF9E831}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23999C97-B934-443D-A86C-7792FBF9E831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28DB9E97-2163-4681-83EF-48545160B332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28DB9E97-2163-4681-83EF-48545160B332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28DB9E97-2163-4681-83EF-48545160B332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28DB9E97-2163-4681-83EF-48545160B332}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

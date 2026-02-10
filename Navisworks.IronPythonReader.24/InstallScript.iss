@@ -5,18 +5,23 @@
 #define AssemblyName "Navisworks.IronPythonReader"
 #define AppName "RNM IronPythonReader"
 #define AppAlias "IronPython Reader"
-#define AppVersion "1.0.0"
+#define AppVersion "1.0.1"
+#define Version "2024"
 #define AppPublisher "RNMTools"
 
+; --- Paths ---
 #define ScriptRoot SourcePath
-#define ProjectRoot ScriptRoot + "..\\" + AssemblyName
+#define ProjectFolder "Navisworks.IronPythonReader.24"
+#define ProjectRoot ScriptRoot + "..\\" + ProjectFolder
+
 #define BinRelease ProjectRoot + "\\bin\\Release"
 #define RibbonPath ProjectRoot + "\\Ribbon\\IronPythonReader.xaml"
 #define PackageContents ProjectRoot + "\\PackageContents.xml"
 #define ResourcesPath ProjectRoot + "\\Resources"
 
-#define Navisworks2024 "\\Autodesk\\ApplicationPlugins\\" + AssemblyName + ".bundle\\Contents\\2024\\"
+#define Navisworks2024 "\\Autodesk\\ApplicationPlugins\\" + AssemblyName + ".bundle\\Contents\\2024"
 
+; --- Debug ---
 #pragma message "ScriptRoot: {#ScriptRoot}"
 #pragma message "ProjectRoot: {#ProjectRoot}"
 #pragma message "BinRelease: {#BinRelease}"
@@ -32,11 +37,10 @@ AppVerName={#AppName} {#AppVersion}
 AppPublisher={#AppPublisher}
 DefaultDirName=C:\ProgramData\{#AppName}
 DisableDirPage=yes
-DefaultGroupName={#AppName}
 DisableProgramGroupPage=yes
 PrivilegesRequired=lowest
 OutputDir=.\Installer
-OutputBaseFilename={#AppAlias}_Installer
+OutputBaseFilename={#AppAlias}_{#Version}_{#AppVersion}_Installer
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -46,15 +50,30 @@ SetupLogging=yes
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-; --- Ensamblados principales (tus DLLs) ---
-Source: "{#BinRelease}\*.dll"; DestDir: "{userappdata}{#Navisworks2024}"; Flags: ignoreversion recursesubdirs
+; --- DLLs ---
+Source: "{#BinRelease}\*.dll"; \
+  DestDir: "{userappdata}{#Navisworks2024}"; \
+  Flags: ignoreversion recursesubdirs
 
-Source: "{#RibbonPath}"; DestDir: "{userappdata}{#Navisworks2024}\es-ES\"; Flags: ignoreversion
-Source: "{#PackageContents}"; DestDir: "{userappdata}\Autodesk\ApplicationPlugins\{#AssemblyName}.bundle\"; Flags: ignoreversion
-Source: "{#ResourcesPath}\*"; DestDir: "{userappdata}{#Navisworks2024}\Images\"; Flags: ignoreversion recursesubdirs
+; --- Ribbon ---
+Source: "{#RibbonPath}"; \
+  DestDir: "{userappdata}{#Navisworks2024}\es-ES\"; \
+  Flags: ignoreversion
+
+Source: "{#RibbonPath}"; \
+  DestDir: "{userappdata}{#Navisworks2024}\en-US\"; \
+  Flags: ignoreversion
+
+; --- PackageContents ---
+Source: "{#PackageContents}"; \
+  DestDir: "{userappdata}\Autodesk\ApplicationPlugins\{#AssemblyName}.bundle\"; \
+  Flags: ignoreversion
+
+; --- Recursos ---
+Source: "{#ResourcesPath}\*"; \
+  DestDir: "{userappdata}{#Navisworks2024}\Images\"; \
+  Flags: ignoreversion recursesubdirs
 
 [Icons]
 Name: "{group}\{#AppName}"; Filename: "{app}\{#AppAlias}.exe"
 
-[Run]
-; Filename: "{app}\{#AppAlias}.exe"; Description: "Run {#AppName}"; Flags: nowait postinstall skipifsilent
