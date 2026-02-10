@@ -1,10 +1,9 @@
 ﻿using Autodesk.Navisworks.Api.Plugins;
 using Navisworks.IronPythonReader.Services;
-using RNM.Navisworks.Balio.Services;
+using RNM.Navisworks.Reader.Services;
 using System;
-using System.Windows;
 
-namespace RNM.Navisworks.Balio.Commands
+namespace RNM.Navisworks.Reader.Commands
 {
     internal class ReaderCommand : AddInPlugin
     {
@@ -19,7 +18,8 @@ namespace RNM.Navisworks.Balio.Commands
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                IDialogService dialogService = new DialogService();
+                dialogService.ShowErrorDialog("ReaderCommand", ex);
                 return 0;
             }
         }

@@ -9,12 +9,12 @@ namespace Navisworks.IronPythonReader.Services
     {
         public void ShowErrorDialog(string commandName, Exception exception)
         {
-            MessageBox.Show($"There was a problem during the execution: Error:\n{exception.Message}", "Balio", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show($"There was a problem during the execution: Error:\n{exception.Message}", "Iron Python Reader", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         public void ShowErrorDialog(string commandName, string exceptionMessage)
         {
-            MessageBox.Show($"There was a problem during the execution: Error:\n{exceptionMessage}", "Balio", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show($"There was a problem during the execution: Error:\n{exceptionMessage}", "Iron Python Reader", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         public string SelectPythonFile()

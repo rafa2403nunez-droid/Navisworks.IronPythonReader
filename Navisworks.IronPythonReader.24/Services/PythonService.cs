@@ -4,7 +4,7 @@ using Microsoft.Scripting.Hosting;
 using Navisworks.IronPythonReader.Services;
 using System;
 
-namespace RNM.Navisworks.Balio.Services
+namespace RNM.Navisworks.Reader.Services
 {
     internal class PythonService : IPythonService
     {
@@ -21,7 +21,7 @@ namespace RNM.Navisworks.Balio.Services
 
             if (path == null)
             {
-                throw new ArgumentNullException("path");
+                throw new Exception("File not Selected");
             }
 
             ScriptEngine engine = Python.CreateEngine();
