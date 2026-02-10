@@ -6,7 +6,7 @@
 
 ## 🚀 Instalación
 
-1. Descarga el instalador más reciente para la versión **2024** desde la sección de *Releases*:  
+1. Descarga el instalador más reciente para la versión **2024** y **2026** desde la sección de *Releases*:  
    👉 [**Descargar última versión**](https://github.com/rafa2403nunez-droid/Navisworks.IronPythonReader/releases)
 
 2. Ejecuta el instalador (`Navisworks.IronPythonReaderSetup.exe`) y sigue los pasos del asistente.
