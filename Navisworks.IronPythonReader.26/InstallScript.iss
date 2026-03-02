@@ -1,7 +1,4 @@
-﻿; ================================
-; RNM IronPython Reader Installer
-; ================================
-
+﻿
 #define AssemblyName "Navisworks.IronPythonReader"
 #define AppName "RNM IronPythonReader"
 #define AppAlias "IronPython Reader"
