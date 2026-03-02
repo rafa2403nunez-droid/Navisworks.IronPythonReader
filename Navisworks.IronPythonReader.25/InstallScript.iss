@@ -58,7 +58,7 @@ Source: "{#RibbonPath}"; \
   Flags: ignoreversion
 
 Source: "{#RibbonPath}"; \
-  DestDir: "{userappdata}{#Navisworks2025}\es-ES\"; \
+  DestDir: "{userappdata}{#Navisworks2025}\en-US\"; \
   Flags: ignoreversion
 
 ; --- PackageContents ---

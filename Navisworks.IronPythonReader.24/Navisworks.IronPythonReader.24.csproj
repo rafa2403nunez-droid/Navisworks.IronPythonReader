@@ -132,6 +132,6 @@
     <Error Condition="!Exists('..\packages\Tools.InnoSetup.6.4.3\build\Tools.InnoSetup.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Tools.InnoSetup.6.4.3\build\Tools.InnoSetup.props'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>if $(ConfigurationName) == Release "%25USERPROFILE%25\.nuget\packages\tools.innosetup\6.2.2\tools\ISCC.exe" "$(ProjectDir)InstallScript.iss"</PostBuildEvent>
+    <PostBuildEvent>REM if $(ConfigurationName) == Release "%25USERPROFILE%25\.nuget\packages\tools.innosetup\6.2.2\tools\ISCC.exe" "$(ProjectDir)InstallScript.iss"</PostBuildEvent>
   </PropertyGroup>
 </Project>
