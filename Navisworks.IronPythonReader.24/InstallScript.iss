@@ -1,7 +1,4 @@
-﻿; ================================
-; RNM IronPython Reader Installer
-; ================================
-
+﻿
 #define AssemblyName "Navisworks.IronPythonReader"
 #define AppName "RNM IronPythonReader"
 #define AppAlias "IronPython Reader"
@@ -50,18 +47,18 @@ SetupLogging=yes
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-; --- DLLs ---
+; --- DLLs (recursivo para cualquier subcarpeta Release) ---
 Source: "{#BinRelease}\*.dll"; \
   DestDir: "{userappdata}{#Navisworks2024}"; \
   Flags: ignoreversion recursesubdirs
 
 ; --- Ribbon ---
 Source: "{#RibbonPath}"; \
-  DestDir: "{userappdata}{#Navisworks2024}\es-ES\"; \
+  DestDir: "{userappdata}{#Navisworks2024}\en-US\"; \
   Flags: ignoreversion
 
 Source: "{#RibbonPath}"; \
-  DestDir: "{userappdata}{#Navisworks2024}\en-US\"; \
+  DestDir: "{userappdata}{#Navisworks2024}\es-ES\"; \
   Flags: ignoreversion
 
 ; --- PackageContents ---
@@ -69,11 +66,10 @@ Source: "{#PackageContents}"; \
   DestDir: "{userappdata}\Autodesk\ApplicationPlugins\{#AssemblyName}.bundle\"; \
   Flags: ignoreversion
 
-; --- Recursos ---
+; --- Recursos (imágenes y otros) ---
 Source: "{#ResourcesPath}\*"; \
   DestDir: "{userappdata}{#Navisworks2024}\Images\"; \
   Flags: ignoreversion recursesubdirs
 
 [Icons]
 Name: "{group}\{#AppName}"; Filename: "{app}\{#AppAlias}.exe"
-

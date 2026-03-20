@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navisworks.IronPythonReader
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navisworks.IronPythonReader.26", "Navisworks.IronPythonReader.26\Navisworks.IronPythonReader.26.csproj", "{28DB9E97-2163-4681-83EF-48545160B332}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navisworks.IronPythonReader.25", "Navisworks.IronPythonReader.25\Navisworks.IronPythonReader.25.csproj", "{1A46AABB-319B-44FC-845C-ADD846549DCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{28DB9E97-2163-4681-83EF-48545160B332}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28DB9E97-2163-4681-83EF-48545160B332}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28DB9E97-2163-4681-83EF-48545160B332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A46AABB-319B-44FC-845C-ADD846549DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A46AABB-319B-44FC-845C-ADD846549DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A46AABB-319B-44FC-845C-ADD846549DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A46AABB-319B-44FC-845C-ADD846549DCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
