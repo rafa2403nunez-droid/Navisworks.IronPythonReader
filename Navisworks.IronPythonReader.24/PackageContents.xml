@@ -18,4 +18,14 @@
     <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw21" SeriesMax="Nw21" />
     <ComponentEntry AppName="Reader" AppType="ManagedPlugin" AppDescription="" Version="1.0.1" ModuleName="./Contents/2024/Navisworks.IronPythonReader.dll"/>
   </Components>
+
+	<Components Description="Navisworks 2025 Iron Python Reader">
+		<RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw22" SeriesMax="Nw22" />
+		<ComponentEntry AppName="Reader" AppType="ManagedPlugin" AppDescription="" Version="1.0.1" ModuleName="./Contents/2025/Navisworks.IronPythonReader.dll"/>
+	</Components>
+
+	<Components Description="Navisworks 2026 Iron Python Reader">
+		<RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw23" SeriesMax="Nw23" />
+		<ComponentEntry AppName="Reader" AppType="ManagedPlugin" AppDescription="" Version="1.0.1" ModuleName="./Contents/2026/Navisworks.IronPythonReader.dll"/>
+	</Components>
 </ApplicationPackage>

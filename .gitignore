@@ -416,5 +416,4 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
-/Navisworks.IronPythonReader.25/Installer/IronPython Reader_2025_1.0.1_Installer.exe
-/Navisworks.IronPythonReader.26/Installer/IronPython Reader_2026_1.0.1_Installer.exe
+*.exe
