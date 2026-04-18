@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RibbonControl x:Uid="RNM.Navisworks.IronPythonReader"
+               xmlns="clr-namespace:Autodesk.Windows;assembly=AdWindows"
+               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               xmlns:local="clr-namespace:Autodesk.Navisworks.Gui.Roamer.AIRLook;assembly=navisworks.gui.roamer">
+
+	<RibbonTab Id="RNMReader" Title="IronPython Reader">
+		<RibbonPanel x:Uid="RibbonPanel_RNMReader">
+			<RibbonPanelSource x:Uid="RibbonPanelSource_Reader" Title="Reader">
+				<local:NWRibbonButton x:Uid="ReaderCommand"
+                                      Id="ReaderCommand"
+                                      Size="Large"
+                                      ShowText="True"
+                                      Text="Run Script"
+                                      Orientation="Vertical" />
+			</RibbonPanelSource>
+		</RibbonPanel>
+	</RibbonTab>
+</RibbonControl>
